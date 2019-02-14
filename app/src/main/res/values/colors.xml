@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#34EBFF</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="background_two">#D1F2FF</color>
+    <color name="back_ground_pikachu">#FFF4AD</color>
+    <color name="background_donal">#ADFFD9</color>
+    <color name="background_jerry">#FDD1A3</color>
 </resources>

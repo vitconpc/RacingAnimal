@@ -3,118 +3,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A1FFC3"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".view.MainActivity">
 
-    <ImageView
-        android:id="@+id/icon_coin"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_launcher_background" />
-
-    <TextView
-        android:id="@+id/tv_my_coin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/icon_coin"
-        android:layout_alignBottom="@+id/icon_coin"
-        android:layout_toRightOf="@+id/icon_coin"
-        android:gravity="center"
-        android:text=" 2000 coin" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_my_coin"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/icon_coin"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@drawable/add_coin" />
+
+        <TextView
+            android:id="@+id/tv_my_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/icon_coin"
+            android:layout_alignBottom="@+id/icon_coin"
+            android:layout_toRightOf="@+id/icon_coin"
+            android:gravity="center" />
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_my_coin"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/background_two"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/dp_10">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="animal 1"
-                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@color/back_ground_pikachu"
+                android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/sp_one"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/pikachu"
+                    android:textSize="@dimen/sp_16" />
+
+                <Spinner
+                    android:id="@+id/sp_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp_20"
+                    android:entries="@array/set_coin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@color/background_donal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/donal_duck"
+                    android:textSize="@dimen/sp_16" />
+
+                <Spinner
+                    android:id="@+id/sp_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp_20"
+                    android:entries="@array/set_coin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_marginHorizontal="20dp"
-                android:entries="@array/set_coin" />
+                android:layout_weight="1"
+                android:background="@color/background_jerry"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jerry"
+                    android:textSize="@dimen/sp_16" />
+
+                <Spinner
+                    android:id="@+id/sp_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp_20"
+                    android:entries="@array/set_coin" />
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="animal 2"
-                android:textSize="16sp" />
-
-            <Spinner
-                android:id="@+id/sp_two"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="20dp"
-                android:entries="@array/set_coin" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginHorizontal="20dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="animal 3"
-                android:textSize="16sp" />
-
-            <Spinner
-                android:id="@+id/sp_three"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="20dp"
-                android:entries="@array/set_coin" />
-        </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/iv_play"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/button_play" />
 
     <TextView
         android:id="@+id/tv_get_coin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/iv_play"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="@dimen/dp_10"
         android:gravity="center"
-        android:text="Số tiền vừa kiếm được là: "
+        android:textColor="#34EBFF"
         android:textSize="16sp" />
 
     <SeekBar
@@ -124,7 +134,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:thumb="@drawable/pikachu" />
+        android:thumb="@drawable/jerry" />
 
     <SeekBar
         android:id="@+id/sb_two"
@@ -133,7 +143,7 @@
         android:layout_above="@id/sb_three"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="5dp"
-        android:thumb="@drawable/pikachu" />
+        android:thumb="@drawable/donal" />
 
     <SeekBar
         android:id="@+id/sb_one"

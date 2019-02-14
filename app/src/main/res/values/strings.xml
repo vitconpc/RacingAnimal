@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Racing Animal</string>
+    <string name="set_coin_again">Số vàng bạn đặt quá lớn, lựa chọn lại mức đặt nào!</string>
+    <string name="add_1000_coin_success">Bạn vừa được cộng thêm 1000 coin</string>
+    <string name="add_coin_fails">Dưới 1000 vàng mới được cộng nha, ahihi</string>
+    <string name="pikachu">Pikachu</string>
+    <string name="donal_duck">Donal duck</string>
+    <string name="jerry">Jerry</string>
     <string-array name="set_coin">
         <item>0</item>
         <item>10</item>
