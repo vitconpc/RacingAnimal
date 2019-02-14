@@ -123,6 +123,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void showTotalCoin(int totalCoin) {
+        if (totalCoin>1000){
+            mTvMyCoin.setText((float)totalCoin/1000 +"k" + Constants.MY_COIN);
+            return;
+        }
         mTvMyCoin.setText(totalCoin + Constants.MY_COIN);
     }
 }
